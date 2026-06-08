@@ -1,5 +1,5 @@
 # Enterprise Multi-Area OSPF Lab
-![Topology](Images/topology.png)
+
 ## Overview
 
 This project demonstrates the implementation of an enterprise-scale OSPF network using GNS3.
@@ -17,7 +17,7 @@ This project demonstrates the implementation of an enterprise-scale OSPF network
 
 ## Topology
 
-![Topology](topology.png)
+![Topology](Images/topology.png)
 
 ## Features Implemented
 
