@@ -17,7 +17,7 @@ This project demonstrates the implementation of an enterprise-scale OSPF network
 
 ## Topology
 
-![Topology](Images/topology.png)
+![Topology](Images/Topology.png)
 
 ## Features Implemented
 
