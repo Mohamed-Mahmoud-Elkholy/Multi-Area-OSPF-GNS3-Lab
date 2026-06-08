@@ -1,0 +1,126 @@
+*Jun  8 09:34:02.926: %SYS-5-CONFIG_I: Configured from console by console
+R10#sh ru
+R10#sh run
+R10#sh running-config
+Building configuration...
+
+Current configuration : 1377 bytes
+!
+! Last configuration change at 09:34:02 UTC Mon Jun 8 2026
+upgrade fpd auto
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R10
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+redundancy
+!
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.0.0.50 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.0.0.53 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router ospf 1
+ router-id 10.10.10.10
+ area 4 virtual-link 9.9.9.9
+ area 5 range 172.16.8.0 255.255.252.0
+ network 10.0.0.48 0.0.0.3 area 4
+ network 10.0.0.52 0.0.0.3 area 5
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+!
+no cdp log mismatch duplex
+!
+!
+!
+control-plane
+!
+!
+!
+mgcp profile default
+!
+!
+!
+gatekeeper
+ shutdown
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login
+ transport input all
+!
+!
+end
