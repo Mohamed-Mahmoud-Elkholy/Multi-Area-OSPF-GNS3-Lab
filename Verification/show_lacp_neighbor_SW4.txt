@@ -1,0 +1,21 @@
+Flags:  S - Device is requesting Slow LACPDUs
+        F - Device is requesting Fast LACPDUs
+        A - Device is in Active mode       P - Device is in Passive mode
+
+Channel group 1 neighbors
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Et0/1     SA      32768     aabb.cc80.0300  23s    0x0    0x1    0x1     0x3D
+Et0/2     SA      32768     aabb.cc80.0300  22s    0x0    0x1    0x3     0x3D
+
+Channel group 2 neighbors
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Et0/3     SA      32768     aabb.cc80.0400  13s    0x0    0x1    0x2     0x3D
+Et1/0     SA      32768     aabb.cc80.0400  27s    0x0    0x1    0x1     0x3D
