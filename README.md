@@ -1,2 +1,56 @@
-# Multi-Area-OSPF-GNS3-Lab
-Enterprise Multi-Area OSPF Lab using GNS3
+# Enterprise Multi-Area OSPF Lab
+
+## Overview
+
+This project demonstrates the implementation of an enterprise-scale OSPF network using GNS3.
+
+## Technologies
+
+- OSPF Multi-Area
+- OSPF Virtual Link
+- RIP v2
+- Route Redistribution
+- Stub Area
+- Totally Stubby Area
+- ABR Summarization
+- ASBR Summarization
+
+## Topology
+
+![Topology](topology.png)
+
+## Features Implemented
+
+### Multi-Area OSPF
+- Area 0
+- Area 1
+- Area 2
+- Area 3
+- Area 4
+- Area 5
+
+### Advanced OSPF Features
+
+- Virtual Link Configuration
+- RIP to OSPF Redistribution
+- Stub Area Configuration
+- Totally Stubby Area Configuration
+- ABR Route Summarization
+- ASBR Route Summarization
+
+## Verification Commands
+
+```bash
+show ip route
+show ip ospf neighbor
+show ip ospf database
+show ip protocols
+```
+
+## Skills Demonstrated
+
+- Enterprise Routing Design
+- OSPF Troubleshooting
+- Route Redistribution
+- Route Summarization
+- Network Optimization
